@@ -18,6 +18,12 @@ The last shot turns on the app's own Radio layer, which lists Chennai stations t
 Files:
 - `chennai/chennai-adyar-twin.scene.json` is the scene to import.
 - `public/scene-assets/chennai/*.geojson` holds the data packs, served by the app at `/scene-assets/chennai/`.
+- `chennai/twin/chennai-city-twin.html` is the Chennai City Twin itself, a standalone 2D twin of Adyar zone that opens in any browser with no install. It has Map, Wireframe and Split views; the real MTC and CMRL timetable with stop departures and moving vehicles; 21 infrastructure layers with toggles, legend, source tags and info cards; consent, sentiment and decision-maker panels; sun position; and the Chennai radio station list.
+- `chennai/chennai-city-twin-bundle.zip` bundles all of the above in one download.
+
+## Open the 2D twin
+
+Download `chennai/twin/chennai-city-twin.html` and open it in a browser. It runs fully offline, except the sun-position panel, which loads the SunCalc library from jsDelivr. The "Data & methods" button lists every layer as real, approximate, modelled or synthetic.
 
 ## Run it
 
