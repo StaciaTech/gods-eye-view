@@ -1,0 +1,234 @@
+{
+ "version": 5,
+ "scenes": [
+  {
+   "id": "chennai-adyar-twin",
+   "title": "Chennai City Twin: Adyar zone",
+   "dataPacks": [
+    {
+     "id": "adyar-wards",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/adyar-wards.geojson"
+     },
+     "attribution": {
+      "text": "Ward boundaries: DataMeet Municipal Spatial Data (Greater Chennai Corporation wards)",
+      "license": "CC BY-SA 2.5 IN",
+      "url": "https://github.com/datameet/Municipal_Spatial_Data"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 7989,
+     "sha256": "e3043de799e681aca2df576730ac0ada98f48da9e05a4d60aa0e052ded814874"
+    },
+    {
+     "id": "transit-stops",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/transit-stops.geojson"
+     },
+     "attribution": {
+      "text": "Bus and metro stops: Chennai unified GTFS v0.2.0 (Ithu Ungal Soththu)",
+      "license": "IIIT-Delhi open data terms",
+      "url": "https://github.com/ungalsoththu/ChennaiGTFS"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 55194,
+     "sha256": "2301b0a1aa608d5f6e64e625ee3cfe2c919012e6831b8fac518446a900fccf0a"
+    },
+    {
+     "id": "bus-network",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/bus-network.geojson"
+     },
+     "attribution": {
+      "text": "Stop-to-stop links derived from Chennai unified GTFS v0.2.0",
+      "license": "IIIT-Delhi open data terms",
+      "url": "https://github.com/ungalsoththu/ChennaiGTFS"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 118808,
+     "sha256": "071e94ab99a874e53e4da2d38f91866694e2a30ef145680c6d6dd1239da6f3ee"
+    },
+    {
+     "id": "places-real",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/places-real.geojson"
+     },
+     "attribution": {
+      "text": "Bridges, organisations and news locations: public reference (Wikipedia, DT Next, Deccan Chronicle, The News Minute); positions approximate",
+      "license": "CC BY-SA (Wikipedia facts); news linked, not reproduced"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 3478,
+     "sha256": "aba35cb659830c5f66d91d9b805f89cf847304f7397cdd12fe106187f2823074"
+    },
+    {
+     "id": "utilities",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/utilities.geojson"
+     },
+     "attribution": {
+      "text": "SYNTHETIC placeholders from the Chennai City Twin (water, sewerage, drains, groundwater, power, telecom). Not real assets.",
+      "license": "Synthetic, no third-party content"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 90916,
+     "sha256": "935b69cbc82286e125c6605bd5f43968cddc3e4c3edb19178f58bd194fdb22d8"
+    },
+    {
+     "id": "street-assets",
+     "version": 1,
+     "format": "geojson",
+     "source": {
+      "adapter": "assets",
+      "path": "chennai/street-assets.geojson"
+     },
+     "attribution": {
+      "text": "SYNTHETIC placeholders from the Chennai City Twin (streetlights, dustbins, toilets, shops, rooftop solar). Not real assets.",
+      "license": "Synthetic, no third-party content"
+     },
+     "placement": {
+      "altitudeReference": "ellipsoid"
+     },
+     "byteLength": 308141,
+     "sha256": "f7c500bcce18cda17cedba77ef91cea0ef1144ae0c66fcba43133f138fd8d9fd"
+    }
+   ],
+   "shots": [
+    {
+     "id": "overview",
+     "title": "Adyar zone, 13 wards",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.0,
+      "lon": 80.245,
+      "alt": 14000,
+      "heading": 0,
+      "pitch": -70,
+      "roll": 0
+     },
+     "dataPackIds": [
+      "adyar-wards"
+     ]
+    },
+    {
+     "id": "transit",
+     "title": "Real bus and metro network",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.005,
+      "lon": 80.24,
+      "alt": 7000,
+      "heading": 0,
+      "pitch": -55,
+      "roll": 0
+     },
+     "dataPackIds": [
+      "adyar-wards",
+      "transit-stops",
+      "bus-network"
+     ]
+    },
+    {
+     "id": "places",
+     "title": "Bridges, institutions and news",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.01,
+      "lon": 80.25,
+      "alt": 4500,
+      "heading": 20,
+      "pitch": -45,
+      "roll": 0
+     },
+     "dataPackIds": [
+      "adyar-wards",
+      "places-real"
+     ]
+    },
+    {
+     "id": "utilities",
+     "title": "Utilities (synthetic placeholders)",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.0,
+      "lon": 80.245,
+      "alt": 6000,
+      "heading": 0,
+      "pitch": -60,
+      "roll": 0
+     },
+     "dataPackIds": [
+      "adyar-wards",
+      "utilities"
+     ]
+    },
+    {
+     "id": "street",
+     "title": "Street assets (synthetic placeholders)",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.0,
+      "lon": 80.257,
+      "alt": 2200,
+      "heading": 330,
+      "pitch": -45,
+      "roll": 0
+     },
+     "dataPackIds": [
+      "adyar-wards",
+      "street-assets"
+     ]
+    },
+    {
+     "id": "radio",
+     "title": "Chennai radio stations",
+     "durationSec": 4,
+     "holdSec": 3,
+     "camera": {
+      "lat": 13.05,
+      "lon": 80.25,
+      "alt": 30000,
+      "heading": 0,
+      "pitch": -80,
+      "roll": 0
+     },
+     "dataPackIds": [],
+     "layers": {
+      "radio": {
+       "enabled": true
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
